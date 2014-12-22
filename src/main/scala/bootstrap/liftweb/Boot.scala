@@ -26,7 +26,8 @@ class Boot {
 
     // Build SiteMap
     val entries = List(
-      Menu.i("Home") / "index" // the simple way to declare a menu
+      Menu.i("Home") / "index", // the simple way to declare a menu
+      Menu.i("lift-ng") / "lift-ng"
     )
 
     // set the sitemap.  Note if you don't want access control for
