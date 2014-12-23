@@ -1,7 +1,6 @@
 package bootstrap.liftweb
 
 import net.liftweb._
-import net.liftweb.test.lib.AsciiDoctorParser
 import util._
 import Helpers._
 
@@ -14,6 +13,8 @@ import net.liftweb.http.js.jquery._
 import java.util.ResourceBundle
 import java.util
 import net.liftweb.util
+
+import scala.xml.NodeSeq
 
 
 /**
@@ -57,6 +58,12 @@ class Boot {
     JQueryModule.InitParam.JQuery=JQueryModule.JQuery172
     JQueryModule.init()
 
-    LiftRules.addContentParser("adoc", AsciiDoctorParser)
+    LiftRules.addContentParser("adoc", adoc)
+  }
+
+  val adoc:String => Box[NodeSeq] = { in =>
+    import org.asciidoctor.Asciidoctor.Factory.create
+    val html = create().convert(in, new java.util.HashMap[String, Object])
+    Full(scala.xml.Unparsed(html))
   }
 }
