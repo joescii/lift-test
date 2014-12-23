@@ -1,0 +1,24 @@
+Joe Barnes is currently a Senior Software Architect at http://www.mentor.com/[Mentor Graphics] where he leads development of cloud-based web solutions such as https://partquest.com/[PartQuest.com].  He has spent most of the last decade developing applications on the JVM, with Scala taking focus in recent projects.  As an eager life-long learner himself, Joe is passionate about helping others learn and improve the craft through mentoring, blogging, lecturing, and contributing to open source.  
+
+Joe can be found blogging at http://proseand.co.nz/[prose::and::conz] and on Twitter as http://twitter.com/joescii/[@joescii].  He also operates as http://github.com/joescii/[joescii] on GitHub where he is a http://liftweb.net[Lift] committer and general open-source Scala slinger.
+
+////
+Tell your audience about yourself.
+Feel free to include links to your company, projects, social media, presentations or infromation relevant to the NFJS audience.
+Your biography can be 1 - 3 paragraphs.
+
+Do not:
+
+* include a document title or section titles
+* modify the document header
+
+Headshot::
+If you would like to include a headshot (or update your headshot) with your bio, make sure to upload it to the root of this repository.
+The dimensions should be 125x125.
+Name the file joescii-headshot.jpg.
+
+Avatar::
+If you would like to include an avatar (or update your avatar) that's shown on the title page of your article, make sure to upload it to the root of this repository.
+The dimensions should be 300x300.
+Name the file joescii-avatar.jpg.
+////

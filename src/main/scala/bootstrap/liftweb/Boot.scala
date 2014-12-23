@@ -1,6 +1,7 @@
 package bootstrap.liftweb
 
 import net.liftweb._
+import net.liftweb.test.lib.AsciiDoctorParser
 import util._
 import Helpers._
 
@@ -27,7 +28,8 @@ class Boot {
     // Build SiteMap
     val entries = List(
       Menu.i("Home") / "index", // the simple way to declare a menu
-      Menu.i("lift-ng") / "lift-ng"
+      Menu.i("lift-ng") / "lift-ng",
+      Menu.i("bio") / "joescii-bio"
     )
 
     // set the sitemap.  Note if you don't want access control for
@@ -54,5 +56,6 @@ class Boot {
     JQueryModule.InitParam.JQuery=JQueryModule.JQuery172
     JQueryModule.init()
 
+    LiftRules.addContentParser("adoc", AsciiDoctorParser)
   }
 }
