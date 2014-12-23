@@ -29,7 +29,8 @@ class Boot {
     val entries = List(
       Menu.i("Home") / "index", // the simple way to declare a menu
       Menu.i("lift-ng") / "lift-ng",
-      Menu.i("bio") / "joescii-bio"
+      Menu.i("bio") / "joescii-bio",
+      Menu.i("nfjs") / "NFJS"
     )
 
     // set the sitemap.  Note if you don't want access control for

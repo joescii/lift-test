@@ -1,0 +1,164 @@
+= Author README
+ <>
+:docs-uri: https://github.com/nofluffjuststuff/nfjsmag-docs/blob/master
+:chrome-uri: https://chrome.google.com/webstore/detail/asciidoctorjs-live-previe/iaalpfgpbocpdfblpnhhgllgbdbchmia?hl=en
+:tools-uri: {docs-uri}/author-workflow-and-tools-guide.adoc
+:image-uri: {tools-uri}#image-formats-and-quality
+:write-uri: {docs-uri}/author-writing-style-and-syntax-guide.adoc
+:head-uri: {write-uri}#title-author-and-article-metadata
+:sect-uri: {write-uri}#section-titles-and-levels
+:code-uri: {write-uri}#source-code-and-program-output
+:con-uri: {write-uri}#console-commands
+:key-uri: {write-uri}#user-interface-styles
+:list-uri: {write-uri}#lists
+:admon-uri: {write-uri}#admonitions
+:link-uri: {write-uri}#urls-and-cross-references
+:foot-uri: {write-uri}#footnotes
+:cite-uri: {write-uri}#bibliography
+:example-uri: {docs-uri}/example-article.adoc
+:asciidoc-syntax-reference-uri: http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
+:asciidoctor-user-manual-uri: http://asciidoctor.org/docs/user-manual/
+:asciidoctor-mail-uri: http://discuss.asciidoctor.org/
+:workflow-git-uri: http://documentup.com/skwp/git-workflows-book
+:github-uri: https://help.github.com/
+:diagram-install-uri: https://github.com/asciidoctor/asciidoctor-diagram/blob/master/README.adoc
+:diagram-use-uri: http://asciidoctor.org/news/2014/02/18/plain-text-diagrams-in-asciidoctor/
+:diagram-feature-uri: https://github.com/asciidoctor/asciidoctor-diagram/blob/master/examples/features.adoc
+:plantuml-uri: http://plantuml.sourceforge.net/index.html
+:graphviz-uri: http://www.graphviz.org/Documentation.php
+
+////
+Template variables:
+
+* author name - Joe Barnes
+* author email - barnesjd@gmail.com
+* author email - joescii
+* repository name - nfjsmag-v6.5-joescii
+* repository url - https://github.com/nofluffjuststuff/nfjsmag-v6.5-joescii
+* edition month - 2014-07
+* draft deadline - July 15, 2014
+* editor name - 
+* editor email - 
+* article title - 
+* style guide url - 
+* model article url - 
+* resource url - 
+////
+
+Joe Barnes,
+
+Welcome to NFJS, the Magazine!
+Thank you for contributing to the 2014-07 issue of NFJS, the Magazine.
+
+To help you get oriented, this document presents an overview of our publishing process including: (1) your submission due dates, (2) the magazine's infrastructure, (3) author tools and file requirements, and (4) article structure, grammar, and syntax guidelines.
+
+== Submission Dates
+
+The requested content or article version must be in your repository on the following dates.
+
+[cols=".^3,^.^1s"]
+|===
+|Article title and abstract ([.path]_article.adoc_)
+|{abstract-due}
+
+|First draft of article, code, and associated images
+|{first-draft-due}
+
+|Final version of article (requested changes and editing completed)
+|{final-edit-due}
+|===
+
+== Article Repository and Template
+
+A repository for your article, named nfjsmag-v6.5-joescii, has been created in the NFJS organization on GitHub.
+This is your personal workspace.
+*Do not fork your repository.*
+
+When you access your repository, you will see the following files and directories.
+
+[cols="^.^1s,3"]
+|===
+
+|article.adoc
+|Write the body of your article in this template.
+The template includes the attributes and syntax the publishing toolchain requires.
+
+|bio.adoc
+|Write your biography in this template.
+If you have written for NFJS before, this document will contain the biographical content you supplied in your last article.
+
+|avatar.jpg
+|A small version of your headshot.
+This image is used in your article's masthead.
+
+|headshot.jpg
+|Your personal image, which is published with your biography.
+
+|/code
+|Save the article's code examples in this directory.
+
+|/images
+|Save the article's images in this directory.
+|===
+
+*You must write your article in the [.path]_article.adoc_ file.*
+It contains attributes required by our publishing toolchain.
+
+== Workflow and Tools
+
+The {tools-uri}[Author Workflow and Tools guide] provides text editor and live previewing recommendations. For instance:
+
+* Make sure you're saving in UTF-8.
+* Windows users need to watch out for BOMs.
+* The {chrome-uri}[Asciidoctor Chrome plugin] previews your article in real time, no processing needed!
+
+=== Image Resolutions and Formats
+
+NFJS, the Magazine, is designed for high density displays.
+In order to provide the best experience for readers, we've updated our image format, quality and resolution requirements.
+See the {image-uri}[Author Workflow and Tools guide] for our SVG, JPG, and PNG specifications.
+
+// We've also added support for PlantUML and Graphviz diagrams.
+
+== Writing Style and Syntax
+
+NFJS articles must be written using the modernized AsciiDoc syntax developed and supported by the Asciidoctor Project.
+The new {write-uri}[Writing Style and Syntax guide] includes the rules and examples for using the updated AsciiDoc syntax.
+It also provides article structure, grammar, punctuation, and formatting recommendations.
+
+Make sure you review the new syntax requirements for these features:
+
+* {head-uri}[Title, subtitle, and part number]
+* {sect-uri}[Section headings]
+* {code-uri}[Source code blocks]
+* {con-uri}[Console output]
+* {key-uri}[Keyboard shortcuts, menu selections, and UI buttons]
+* {list-uri}[Run-in lists]
+
+Also, we've clarified when and how you should use:
+
+* {admon-uri}[Admonitions]
+* {link-uri}[URLs]
+* {foot-uri}[Footnotes]
+* {cite-uri}[Parenthetical citations and reference entries] (i.e., the Bibliography)
+
+// == Help
+
+// Final words and thoughts
+
+== Additional Resources and Help
+
+{example-uri}[Example NFJS Article]:: In-context examples of the topics mentioned in this guide.
+
+{workflow-git-uri}[Git] and {github-uri}[GitHub]:: Help and tips for managing your writing and editing workflow using git and GitHub.
+
+{asciidoc-syntax-reference-uri}[Asciidoctor Quick Reference]:: Brief explanations and examples of the common AsciiDoc elements, attributes and values.
+
+{asciidoctor-user-manual-uri}[Asciidoctor User Manual]:: The super massive, definitive guide to everything Asciidoctor and AsciiDoc.
+If you can't find your answer here, don't hesitate to jump on the project's {asciidoctor-mail-uri}[mailing list].
+
+Asciidoctor Diagram:: {diagram-install-uri}[Installation] and {diagram-use-uri}[usage] guides, as well as how to {diagram-feature-uri}[embed diagrams] written using PlantUML or Graphviz directly in your article.
+
+{plantuml-uri}[PlantUML]:: Textual description examples of class diagrams, component diagrams, wireframe graphical interfaces, and much more.
+
+{graphviz-uri}[Graphviz]:: Graph visualization documentation for creating layered drawings of directed graphs.
