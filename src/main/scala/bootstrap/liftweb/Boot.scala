@@ -58,7 +58,7 @@ class Boot {
     JQueryModule.InitParam.JQuery=JQueryModule.JQuery172
     JQueryModule.init()
 
-    LiftRules.contentParsers += "adoc" -> ( () => LiftRules.toContentParser(parseAdoc) )
+    LiftRules.contentParsers :+= ContentParser.basic("adoc", parseAdoc)
   }
 
   val adoc = org.asciidoctor.Asciidoctor.Factory.create()
